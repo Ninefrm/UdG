@@ -1,22 +1,29 @@
-#ifndef LISTA_H_INCLUDED
-#define LISTA_H_INCLUDED
+#ifndef _LISTA_H_
+#define _LISTA_H_
 
-class Lista{
+#include <string>
+#include "Usuario.h"
+
+class Lista:public Usuario{
 private:
-    int elementos[10], ultimo;
-
+    Usuario elementos[300];
+    int ultimo;
 public:
     Lista();
-    void insertar(int, int);
+    void insertar(int);
     void suprimir(int);
     void mostrar();
-    int localizar(int);
-    int primero();
-    int ultim0();
+    int localizar(std::string s);
+    void primero();
+    void ultim0();
     int anterior(int);
     int siguiente(int);
     bool estaVacia();
     bool estaLlena();
+    Usuario Llenar();
+    void Imprimir(Usuario A);
+    void Rellenar();
+    int ult();
 
 };
 
