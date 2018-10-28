@@ -1,14 +1,14 @@
 #include <iostream>
-#include "usuario.h"
-#include "Lista.h"
+
 
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  Lista A;
+  /*Lista A;
   A.Rellenar();
   A.insertar(1);
   A.mostrar();
+  */
 
   return 0;
 }
