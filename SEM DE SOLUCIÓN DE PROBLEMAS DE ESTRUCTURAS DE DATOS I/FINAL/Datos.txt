@@ -1,0 +1,41 @@
+Categorias:
+	Retrato.
+	Paisajismo.
+	Fotografía Urbana.
+	Blanco y negro.
+	Glamour.
+
+Titulo de la obra.
+Técnica:
+	Papel.
+	Madera.
+	Piedra.
+	Textil.
+Tipo de cámara.
+Tipo de lente.
+Diafragma que usó.
+Velocidad obturación.
+Locación -paisaje y fotografía urbana-.
+Nombre del modelo -retrato-.
+Nombre del fotógrafo.
+Precio de venta. 
+
+Nombre completo.
+Grado.
+Años de experiencia.
+Número de teléfono.
+Ciudad de origen.
+Edad.
+
+Programa:
+	Lista de fotografos por categoria/filtrada.
+	Más categorias.
+	Registrar fotografos.
+	Eliminar todos los fotografos, con contraseña.
+	Eliminar fotografos por nombre, eliminar obras si tiene.
+	Ordenar los fotografos por nombre y por apellido.
+	Modificiar los datos del fótografo.
+	Agregar una obra a la lista del fotografo.
+	Eliminar obras si el fotografo no quiere participar.
+	Eliminar obra por nombre del fotografo.
+	Ordenar las obras por categorias y por autor.
