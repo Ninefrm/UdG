@@ -9,8 +9,9 @@ private:
 	int YXP;
 	double long Phone;
 	std::string Hometown;
-	std::vector<Obra> Collection;
+	//std::vector<Obra> Collection;
 public:
+	std::vector<Obra> Collection;
 	Fotografo();
 	void addGrade(std::string);
 	void addYXP(int);
