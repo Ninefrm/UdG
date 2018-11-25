@@ -130,13 +130,14 @@ void Obra::showTF()
 	std::cout << showPrice() << std::endl;
 }
 
-void Obra::addTF()
-{	
+Obra Obra::addTF()
+{
+	Obra A;
 	std::string N;
 	int OP;
 	std::cout << "Title: " << std::endl;
 	getline(std::cin, N);
-	Title=N;
+	A.addTitle(N);
 
 	std::cout << "Category. " << std::endl;
 	std::cout << "0.-Portrait." << std::endl;
@@ -145,7 +146,7 @@ void Obra::addTF()
 	std::cout << "3.-Black&White." << std::endl;
 	std::cout << "4.-Glamour." << std::endl;
 	std::cin >> OP;
-	Category=OP;
+	A.addCategory(OP);
 
 	std::cout << "Tectechnique. " << std::endl;
 	std::cout << "0.-Paper." << std::endl;
@@ -153,7 +154,7 @@ void Obra::addTF()
 	std::cout << "2.-Rock." << std::endl;
 	std::cout << "3.-Textile." << std::endl;
 	std::cin >> OP;
-	Tectechnique=OP;
+	A.addTectechnique(OP);
 
 	std::cout << "Camera Type. " << std::endl;
 	std::cout << "0.-Compact." << std::endl;
@@ -161,7 +162,7 @@ void Obra::addTF()
 	std::cout << "2.-SLR." << std::endl;
 	std::cout << "3.-Digital." << std::endl;
 	std::cin >> OP;
-	CameraType=OP;
+	A.addCameraType(OP);
 
 	std::cout << "Len Type. " << std::endl;
 	std::cout << "0.-Standard." << std::endl;
@@ -171,7 +172,7 @@ void Obra::addTF()
 	std::cout << "4.-Macro." << std::endl;
 	std::cout << "5.-Fish eye." << std::endl;
 	std::cin >> OP;
-	LensType=OP;
+	A.addLensType(OP);
 
 	std::cout << "Diaphragm. " << std::endl;
 	std::cout << "0.-f/2." << std::endl;
@@ -183,7 +184,7 @@ void Obra::addTF()
 	std::cout << "6.-f/16." << std::endl;
 	std::cout << "7.-f/22." << std::endl;
 	std::cin >> OP;
-	Diaphragm=OP;
+	A.addDiaphragm(OP);
 
 	std::cout << "Shutter speed. " << std::endl;
 	std::cout << "0.-1/1000." << std::endl;
@@ -195,19 +196,18 @@ void Obra::addTF()
 	std::cout << "6.-1/15." << std::endl;
 	std::cout << "7.-1/8." << std::endl;
 	std::cin >> OP;
-	ShutterSpeed=OP;
+	A.addShutterSpeed(OP);
 	std::cin.ignore();
 
 	std::cout << "Location: ";
 	getline(std::cin, N);
-	Location=N;
-	std::cin.ignore();
+	A.addLocation(N);
 	std::cout << "Model Name: ";
 	getline(std::cin, N);
-	ModelName=N;
-	std::cin.ignore();
+	A.addModelName(N);
 	std::cout << "Price: $";
 	std::cin >> OP;
-	Price=OP;
-
+	A.addPrice(OP);
+	return A;
 }
+

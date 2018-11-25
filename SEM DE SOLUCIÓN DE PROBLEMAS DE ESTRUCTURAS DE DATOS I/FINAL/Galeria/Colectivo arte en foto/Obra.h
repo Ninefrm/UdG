@@ -37,6 +37,6 @@ public:
 	void addModelName(std::string);
 	void addPrice(int);
 	void showTF();
-	void addTF();
+	Obra addTF();
 };
 
