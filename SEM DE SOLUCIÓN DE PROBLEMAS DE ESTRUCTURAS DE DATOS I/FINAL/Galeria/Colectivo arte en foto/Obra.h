@@ -6,7 +6,7 @@ class Obra
 private:
 	std::string Title;
 	int Category;
-	int Tectechnique;
+	int Technique;
 	int CameraType;
 	int LensType;
 	int Diaphragm;
@@ -18,7 +18,7 @@ public:
 	Obra();
 	std::string showTitle();
 	int showCategory();
-	int showTectechnique();
+	int showTechnique();
 	int showCameraType();
 	int showLensType();
 	int showDiaphragm();
@@ -28,7 +28,7 @@ public:
 	int showPrice();
 	void addTitle(std::string);
 	void addCategory(int);
-	void addTectechnique(int);
+	void addTechnique(int);
 	void addCameraType(int);
 	void addLensType(int);
 	void addDiaphragm(int);

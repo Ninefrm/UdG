@@ -6,7 +6,7 @@ Obra::Obra()
 {
 	Title="Example";
 	Category = 0;
-	Tectechnique = 0;
+	Technique = 0;
 	CameraType = 0;
 	LensType = 0;
 	Diaphragm = 0;
@@ -26,9 +26,9 @@ int Obra::showCategory()
 	return Category;
 }
 
-int Obra::showTectechnique()
+int Obra::showTechnique()
 {
-	return Tectechnique;
+	return Technique;
 }
 
 int Obra::showCameraType()
@@ -76,9 +76,9 @@ void Obra::addCategory(int N)
 	Category = N;
 }
 
-void Obra::addTectechnique(int N)
+void Obra::addTechnique(int N)
 {
-	Tectechnique = N;
+	Technique = N;
 }
 
 void Obra::addCameraType(int N)
@@ -120,7 +120,7 @@ void Obra::showTF()
 {
 	std::cout << showTitle() << std::endl;
 	std::cout << showCategory() << std::endl;
-	std::cout << showTectechnique() << std::endl;
+	std::cout << showTechnique() << std::endl;
 	std::cout << showCameraType() << std::endl;
 	std::cout << showLensType() << std::endl;
 	std::cout << showDiaphragm() << std::endl;
@@ -148,13 +148,13 @@ Obra Obra::addTF()
 	std::cin >> OP;
 	A.addCategory(OP);
 
-	std::cout << "Tectechnique. " << std::endl;
+	std::cout << "Technique. " << std::endl;
 	std::cout << "0.-Paper." << std::endl;
 	std::cout << "1.-Wood." << std::endl;
 	std::cout << "2.-Rock." << std::endl;
 	std::cout << "3.-Textile." << std::endl;
 	std::cin >> OP;
-	A.addTectechnique(OP);
+	A.addTechnique(OP);
 
 	std::cout << "Camera Type. " << std::endl;
 	std::cout << "0.-Compact." << std::endl;
